@@ -1,0 +1,47 @@
+$color-black: #000;
+$color-white: #fff;
+
+// Font Families
+$font-primary: "Montserrat";
+$font-family: $font-primary, "Helvetica", "Arial", "sans-serif";
+
+// Font Weights
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// Font Sizes
+$font-xxs: rem(10);
+$font-xs: rem(12);
+$font-sm: rem(16);
+$font-default: rem(24);
+$font-md: rem(32);
+$font-lg: rem(50);
+$font-xl: rem(66);
+$font-xxl: rem(76);
+
+// Line Heights
+
+// Spacings
+$space-sm: 1.5rem;
+$space-md: rem(35);
+$space-lg: rem(50);
+$space-xl: 4.5rem;
+$space-xxl: 6rem;
+$sections-y-space: rem(100);
+
+//10,15,30,50,100,200
+
+// Side spaces
+$sm-side-space: rem(20);
+$tablet-side-space: 2.5rem;
+$md-side-space: rem(210);
+$lg-side-space: rem(335);
+
+// Breakpoints
+$phone-sm: 576px;
+$tablet-md: 768px;
+$desktop-lg: 992px;
+$desktop-xl: 1200px;
+$desktop-xxl: 1600px;

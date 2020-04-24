@@ -1,0 +1,45 @@
+%on-hover-opacity {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+%flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+%container {
+    width: calc(100vw - #{rem(80)});
+    margin: 0 auto;
+
+    @media screen and (min-width: $tablet-md) {
+        width: calc(100vw - #{rem(250)});
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: $desktop-lg) {
+        width: calc(100vw - #{rem(380)});
+        margin: 0 auto;
+    }
+}
+
+%bg-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+
+    img.img-hidden {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        height: 10px;
+        width: 10px;
+
+        visibility: hidden;
+    }
+}
+
