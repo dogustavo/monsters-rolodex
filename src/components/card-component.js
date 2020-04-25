@@ -7,7 +7,7 @@ const Card = props => (
             alt=""
         />
         <h1 className="monster-name"> {props.monster.name} </h1>
-        <p> {props.monster.email} </p>
+        <p className="monster-email"> {props.monster.email} </p>
     </div>
 );
 

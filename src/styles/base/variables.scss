@@ -1,8 +1,11 @@
 $color-black: #000;
 $color-white: #fff;
+$color-gray: #ccc;
+
+$color-robin-egg-blue: #0CCAC4;
 
 // Font Families
-$font-primary: "Montserrat";
+$font-primary: "Bigelow Rules";
 $font-family: $font-primary, "Helvetica", "Arial", "sans-serif";
 
 // Font Weights
@@ -17,9 +20,11 @@ $font-xs: rem(12);
 $font-sm: rem(16);
 $font-default: rem(24);
 $font-md: rem(32);
+$font-md-alt: rem(42);
 $font-lg: rem(50);
 $font-xl: rem(66);
 $font-xxl: rem(76);
+$font-big-xxl: rem(96);
 
 // Line Heights
 

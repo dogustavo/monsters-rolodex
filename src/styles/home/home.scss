@@ -1,0 +1,39 @@
+.monsters-home {
+    margin: 0 auto;
+    padding: rem(60);
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient( 
+        to left,
+        rgba(7, 27, 82, 1) 0%,
+        rgba(0, 128, 128, 1) 100%
+    );
+
+    .monster-title {
+        font-family: $font-primary;
+        font-size: $font-big-xxl;
+        color: $color-robin-egg-blue;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: rem(80);
+    }
+
+    .input-search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: rem(32);
+    }
+
+    .search {
+        border: 1px solid $color-gray;
+        border-radius: rem(5);
+        border-style: solid;
+        padding-left: rem(20);
+        font-size: $font-default;
+        width: rem(300);
+        height: rem(48);
+        line-height: rem(30);
+    }
+}
