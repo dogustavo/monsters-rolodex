@@ -2,7 +2,7 @@
     width: 85vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(1, 100%);
     grid-gap: rem(20);
     text-align: center;
     font-size: $font-lg;
@@ -27,12 +27,27 @@
     }
 
     .monster-email {
-        font-size: $font-md-alt;
+        font-size: $font-default;
     }
 
     .monster-name {
+        font-size: $font-md-alt;
         margin-top: rem(20);
         margin-bottom: rem(32);
     }
 
+}
+
+@media (min-width: $desktop-lg) {
+    .card-list {
+        grid-template-columns: repeat(3, 33.33%);
+    
+        .monster-email {
+            font-size: $font-md-alt;
+        }
+    
+        .monster-name {
+            font-size: $font-xxl;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 .monsters-home {
     margin: 0 auto;
-    padding: rem(60);
+    padding: rem(16);
     width: 100%;
     min-height: 100vh;
     background: linear-gradient( 
@@ -16,6 +16,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
+        text-align: center;
         padding-top: rem(80);
     }
 
@@ -35,5 +36,27 @@
         width: rem(300);
         height: rem(48);
         line-height: rem(30);
+    }
+}
+
+@media (min-width: $desktop-lg) {
+    .monsters-home {
+        margin: 0 auto;
+        padding: rem(60);
+    
+        .monster-title {
+            padding-top: rem(80);
+        }
+    
+        .input-search {
+            padding: rem(32);
+        }
+    
+        .search {
+            padding-left: rem(20);
+            width: rem(300);
+            height: rem(48);
+            line-height: rem(30);
+        }
     }
 }
