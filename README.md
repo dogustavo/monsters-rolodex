@@ -1,8 +1,7 @@
 ## Monsters Rolodex
 
-Esse projeto está sendo desenvolvido junto 
-ao curso de reactjs que eu estou realizando
-para melhorar meu conhecimentos em react
+Esse site está sendo desenvolvido junto 
+ao curso de reactjs para melhorar meus conhecimentos em react
 
 
 
