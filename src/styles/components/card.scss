@@ -1,0 +1,32 @@
+.card-list {
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-gap: rem(20);
+    text-align: center;
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #95dada;
+        border: 1px solid grey;
+        border-radius: rem(5);
+        padding: rem(25);
+        cursor: pointer;
+        -moz-osx-font-smoothing: grayscale;
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: transform 0.25s ease-out;
+
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .monster-name {
+        margin-top: rem(20);
+        margin-bottom: rem(32);
+    }
+}

@@ -1,35 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Home extends React.Component {
+import { CardList } from '../components/card-list';
+
+class Home extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            monsters: [
-                {
-                    name: 'Frankenstein',
-                    id: '21'
-                },
-                {
-                    name: 'Dracula',
-                    id: '22'
-                },
-                {
-                    name: 'Zombie',
-                    id: '23'
-                },
-
-            ]
+            monsters: [],
+            serachField: ''
         };
     }
+
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response => response.json())
+            .then(users => this.setState({ monsters: users }))
+    }
+
     render() {
+        const { monsters, serachField } = this.state;
+
+        const filteredMonster = monsters.filter(monster =>
+            monster.name.toLowerCase().includes(serachField.toLowerCase())
+        )
         return (
             <section className="Home">
-                {
-                   this.state.monsters.map(
-                   monster => <h1 key={monster.id}> { monster.name } </h1>
-                    )
-                }
+                <input 
+                    type="search" 
+                    placeholder="searche monters" 
+                    onChange={e => this.setState({ serachField: e.target.value })}
+                />
+                <CardList monsters={filteredMonster}/>
             </section>
         );
     }
